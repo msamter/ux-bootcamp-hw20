@@ -1,0 +1,155 @@
+// Functions first
+@mport "../node_modules/bootstrap/scss/functions";
+
+// Variable overrides second
+$primary: #900;
+$enable-shadows: true;
+$prefix: "mo-";
+
+// Required Bootstrap imports
+@import "../node_modules/bootstrap/scss/variables";
+@import "../node_modules/bootstrap/scss/variables-dark";
+@import "../node_modules/bootstrap/scss/maps";
+@import "../node_modules/bootstrap/scss/mixins";
+@import "../node_modules/bootstrap/scss/root";
+
+@media only screen and (max-width: 620px)
+  /* For mobile phones: */
+  .menu, .main, .right {
+    width: 100%;
+}
+
+.nav-item {
+
+}
+
+.component {
+  color: var(--bs-gray-800);
+  background-color: var(--bs-gray-100);
+  border: 1px solid var(--bs-gray-200);
+  border-radius: .25rem;
+}
+  
+.component-header {
+  color: var(--bs-purple);
+}
+
+body {
+  --bs-body-font-family: var(--bs-font-monospace);
+  --bs-body-line-height: 1.4;
+  --bs-body-bg: var(--bs-gray-100);
+}
+  
+.table {
+  --bs-table-color: var(--bs-gray-600);
+  --bs-table-bg: var(--bs-gray-100);
+  --bs-table-border-color: transparent;
+}
+
+<col-sm-4> {
+
+}
+
+/* Override Bootstrap styles */
+.navbar-brand {
+  font-weight: bold;
+}
+
+.jumbotron {
+  background-color: #f8f9fa;
+}
+
+.container {
+  margin-top: 20px;
+}
+
+
+h3 {
+  margin-top: 20px;
+}
+
+p {
+  margin-bottom: 20px;
+}
+
+.card {
+
+}
+
+/* Nav Footer Section */
+footer {
+  background-color: #FFFFFF;
+  height:50px;
+  padding: 3%;
+  margin: 2px;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  font-size: 14px;
+  font-family: "Roboto", "Arial";
+  color: #333333;
+  }
+  
+footer ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0px;
+  padding: 3px;
+  margin-right: 1%;
+}
+
+footer ul li {
+  margin: 0 10px;
+}
+
+footer p {
+  list-style-type: style;
+  display: block;
+  justify-content: right;
+  align-items: center;
+  margin: 1px;
+  padding: 3px;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+  
+  .menu {
+    float: left;
+    width: 20%;
+    text-align: center;
+  }
+  
+  .menu a {
+    background-color: #e5e5e5;
+    padding: 8px;
+    margin-top: 7px;
+    display: block;
+    width: 100%;
+    color: black;
+  }
+  
+  .main {
+    float: left;
+    width: 60%;
+    padding: 0 20px;
+  }
+  
+  .right {
+    background-color: #e5e5e5;
+    float: left;
+    width: 20%;
+    padding: 15px;
+    margin-top: 7px;
+    text-align: center;
+  }
+  
+  @media only screen and (max-width: 620px) {
+    /* For mobile phones: */
+    .menu, .main, .right {
+        width: 100%;
+    }
+  }
