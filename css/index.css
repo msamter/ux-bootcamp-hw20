@@ -20,7 +20,13 @@ $prefix: "mo-";
 }
 
 .nav-item {
-
+  display: flex;
+  align-items: center;
+  margin-right: 3%;
+  padding: 1%;
+  font-size: 18px;
+  font-family: "Montserrat", "Roboto", "Arial";
+  color: #333333;
 }
 
 .component {
@@ -51,6 +57,7 @@ body {
 }
 
 /* Override Bootstrap styles */
+
 .navbar-brand {
   font-weight: bold;
 }
@@ -63,17 +70,12 @@ body {
   margin-top: 20px;
 }
 
-
 h3 {
   margin-top: 20px;
 }
 
 p {
   margin-bottom: 20px;
-}
-
-.card {
-
 }
 
 /* Nav Footer Section */
