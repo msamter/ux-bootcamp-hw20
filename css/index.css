@@ -1,32 +1,26 @@
-// Functions first
-@mport "../node_modules/bootstrap/scss/functions";
-
-// Variable overrides second
-$primary: #900;
-$enable-shadows: true;
-$prefix: "mo-";
-
-// Required Bootstrap imports
-@import "../node_modules/bootstrap/scss/variables";
-@import "../node_modules/bootstrap/scss/variables-dark";
-@import "../node_modules/bootstrap/scss/maps";
-@import "../node_modules/bootstrap/scss/mixins";
-@import "../node_modules/bootstrap/scss/root";
-
-@media only screen and (max-width: 620px)
-  /* For mobile phones: */
-  .menu, .main, .right {
-    width: 100%;
+:root {
+  --primary: #900;
+  --enable-shadows: true;
+  --prefix: "mo-";
 }
+
+@import "../node_modules/css/bootstrap.css";
+@import "../node_modules/css/bootstrap-dark.css";
 
 .nav-item {
   display: flex;
-  align-items: center;
-  margin-right: 3%;
+  align-items: left;
+  margin-left: auto;
   padding: 1%;
   font-size: 18px;
   font-family: "Montserrat", "Roboto", "Arial";
   color: #333333;
+}
+
+.collapse navbar-collapse {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
 }
 
 .component {
@@ -52,12 +46,7 @@ body {
   --bs-table-border-color: transparent;
 }
 
-<col-sm-4> {
-
-}
-
 /* Override Bootstrap styles */
-
 .navbar-brand {
   font-weight: bold;
 }
@@ -78,12 +67,23 @@ p {
   margin-bottom: 20px;
 }
 
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+display: flex;
+flex-direction: column;
+}
+
 /* Nav Footer Section */
 footer {
   background-color: #FFFFFF;
-  height:50px;
-  padding: 3%;
-  margin: 2px;
+  height:100px;
+  padding: 20px;
+  margin-top: auto;
   display: flex;
   justify-content: left;
   align-items: center;
